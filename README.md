@@ -1,58 +1,369 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Luméa Cosmetics
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Beauty that feels like you.
 
-## About Laravel
+Luméa Cosmetics is a full-stack cosmetics e-commerce web application built with PHP, Laravel, MySQL, Blade, JavaScript, Vite and Composer.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+✨ Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Customer Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Responsive home page
 
-## Learning Laravel
+Product browsing and product details
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Search, category filtering and sorting
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Shopping cart and quantity management
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+Checkout and order placement
 
-## Agentic Development
+Coupon application and removal
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Customer registration, login and logout
 
-```bash
-composer require laravel/boost --dev
+Customer order history
 
-php artisan boost:install
-```
+Wishlist
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Product ratings and reviews
 
-## Contributing
+Responsive mobile-friendly UI
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Admin Features
 
-## Code of Conduct
+Admin dashboard
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Product CRUD management
 
-## Security Vulnerabilities
+Category CRUD management
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Dynamic product-category relationship
 
-## License
+Order management and status updates
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Customer management
+
+Review management
+
+Coupon CRUD management
+
+Store reports
+
+Low-stock product monitoring
+
+Role-based admin access control
+
+🛠️ Tech Stack
+
+Technology
+
+Usage
+
+PHP
+
+Backend development
+
+Laravel
+
+Web application framework
+
+MySQL / SQLite
+
+Database
+
+Blade
+
+Server-side templating
+
+JavaScript
+
+Frontend interactions
+
+HTML5
+
+Page structure
+
+CSS3
+
+Responsive UI styling
+
+Vite
+
+Asset bundling
+
+Composer
+
+PHP dependency management
+
+Git & GitHub
+
+Version control
+
+🏗️ Architecture
+
+The application follows the MVC (Model-View-Controller) architecture.
+
+User
+  ↓
+Route
+  ↓
+Controller
+  ↓
+Model
+  ↓
+Database
+  ↓
+Controller
+  ↓
+Blade View
+  ↓
+User
+
+Laravel features used in the project include:
+
+Routing
+
+Controllers
+
+Eloquent ORM
+
+Database migrations
+
+Model relationships
+
+Blade templates
+
+Authentication
+
+Middleware
+
+Validation
+
+Sessions
+
+Redirects
+
+📸 Screenshots
+
+Home Page
+
+
+
+Shop Page
+
+
+
+Product Details
+
+
+
+Shopping Cart
+
+
+
+Checkout
+
+
+
+🔐 Admin Panel
+
+Admin Dashboard
+
+
+
+Product Management
+
+
+
+Category Management
+
+
+
+Coupon Management
+
+
+
+Review Management
+
+
+
+Reports
+
+
+
+📂 Main Project Structure
+
+lumea-cosmetics/
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   └── Models/
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── public/
+├── resources/
+│   └── views/
+├── routes/
+│   └── web.php
+├── storage/
+├── tests/
+├── composer.json
+├── package.json
+└── vite.config.js
+
+🚀 Installation
+
+1. Clone the repository
+
+git clone https://github.com/Nadeera-Sithmini/lumea-cosmetics.git
+cd lumea-cosmetics
+
+2. Install PHP dependencies
+
+composer install
+
+3. Create the environment file
+
+copy .env.example .env
+
+4. Generate the application key
+
+php artisan key:generate
+
+5. Configure the database
+
+Update the database settings in .env.
+
+For MySQL:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=lumea_cosmetics
+DB_USERNAME=root
+DB_PASSWORD=
+
+For SQLite:
+
+DB_CONNECTION=sqlite
+
+6. Run migrations
+
+php artisan migrate
+
+7. Install frontend dependencies
+
+npm install
+
+8. Build frontend assets
+
+npm run build
+
+9. Start the development server
+
+composer run dev
+
+The application will normally be available at:
+
+http://127.0.0.1:8000
+
+🛒 Application Flow
+
+Home
+  ↓
+Shop
+  ↓
+Product Details
+  ↓
+Add to Cart
+  ↓
+Cart
+  ↓
+Checkout
+  ↓
+Apply Coupon
+  ↓
+Place Order
+  ↓
+Order Success
+  ↓
+Customer Order History
+
+👤 Admin Flow
+
+Admin Login
+    ↓
+Admin Dashboard
+    ├── Products
+    ├── Categories
+    ├── Orders
+    ├── Customers
+    ├── Reviews
+    ├── Coupons
+    └── Reports
+
+🔒 Security
+
+The application uses authentication and role-based middleware to protect admin routes.
+
+Authenticated User
+       ↓
+   Admin Middleware
+       ↓
+Is user role = admin?
+       ↓
+   ┌───┴────┐
+  Yes       No
+   ↓         ↓
+Admin      403
+Panel
+
+📱 Responsive Design
+
+The application interface is designed to work across:
+
+Desktop
+
+Tablet
+
+Mobile
+
+The project includes responsive layouts for both customer-facing pages and the admin dashboard.
+
+📌 Project Highlights
+
+Full-stack Laravel e-commerce implementation
+
+MVC-based application structure
+
+Relational product and category management
+
+Customer authentication and authorization
+
+Cart and checkout workflow
+
+Coupon validation and discount handling
+
+Order and stock management
+
+Wishlist and review system
+
+Admin dashboard and reporting
+
+Responsive UI
+
+👩‍💻 Developer
+
+Nadeera Weerasinghe
+
+GitHub: Nadeera-Sithmini
+
+LinkedIn: Nadeera Sithmini
+
+📄 License
+
+This project is created for educational, portfolio and development purposes.
